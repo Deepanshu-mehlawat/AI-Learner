@@ -10,7 +10,7 @@ pip install requests beautifulsoup4 flask flask-cors
 python API.py
 ```
 
-##To check the Scrapping API, use the following GET command on your command prompt:
+## To check the Scrapping API, use the following GET command on your command prompt:
 ```bash
 curl http://localhost:5000/training-data?competency_id=ueeel0025
 ```
