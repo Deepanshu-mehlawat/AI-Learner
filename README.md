@@ -27,7 +27,7 @@ You can replace competency_id with any ID you want.
 
 ##### Response:
 
-Success (200): Returns the training data in JSON format.
+Success (200): Returns the training data in JSON format.  
 Error (400): Returns an error message if the competency_id parameter is missing.
 Error (404): Returns an error message if data for the provided competency_id could not be retrieved.
 
