@@ -1,16 +1,16 @@
-# AI-Learner
+## AI-Learner
 
-## Install these dependencies using pip before running the files:
+### Install these dependencies using pip before running the files:
 ```bash
-pip install requests beautifulsoup4 flask flask-cors
+pip install requests beautifulsoup4 flask flask-cors openai python-dotenv
 ```
 
-## To run the app, simply type this in yourcommand prompt:
+### To run the app, simply type this in yourcommand prompt:
 ```bash
 python API.py
 ```
 
-## To check the Scrapping API, use the following GET command on your command prompt:
+### To check the Scrapping API, use the following GET command on your command prompt:
 ```bash
 curl http://localhost:5000/training-data?competency_id=ueeel0025
 ```
