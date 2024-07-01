@@ -44,3 +44,49 @@ def update_training_data(data, custom_prompt=None):
         json.dump(data, f, indent=4)
 
     return data
+
+def extract_topics_from_evidences(knowledge_evidence,custom_prompt = ""):
+    topics = []
+    if len(knowledge_evidence)>1:
+        print('its here')
+
+    try:
+        messages = [
+        {"role": "system", "content": '''i am making an API that recieves a JSON based KNowledge evidence data that contains a list of subjects one needs to learn to pass
+a course, i want you to read the knowledge evidences and return to me a list of topics, return only comma separated topic names, no code block, no nothing.'''},
+        {"role": "user", "content": f"here are the knowledge evidences:\n{knowledge_evidence}\nreturn the major topic names." + custom_prompt}
+        ]
+
+        completion = client.chat.completions.create(
+        model="gpt-3.5-turbo",
+        messages=messages
+        )
+
+        # Extract topics from the completion response
+        topics.extend(completion.choices[0].message.content.split(','))
+        return topics
+
+    except Exception as e:
+        print(f"Error extracting topics: {str(e)}")
+
+def generate_topic_description(topic_name,custom_prompt):
+    try:
+        # Construct a prompt for GPT-3.5 to generate a description of the topic
+        prompt = f"Generate a 500-word description of '{topic_name}'. Include details, examples, and relevant information."+custom_prompt
+
+        messages = [
+        {"role": "user", "content": prompt}
+        ]
+
+        completion = client.chat.completions.create(
+        model="gpt-3.5-turbo",
+        messages=messages
+        )
+
+        return completion.choices[0].message.content.strip()
+
+    except Exception as e:
+        print(f"Error generating topic description: {str(e)}")
+        return None
+    
+    return topics

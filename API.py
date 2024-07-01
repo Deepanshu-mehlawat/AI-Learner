@@ -29,7 +29,7 @@ def performance_criteria():
         if not content or 'custom_prompt' not in content:
             return jsonify({"error": "Invalid JSON payload or missing 'custom_prompt' field"}), 400
 
-        custom_prompt = content['custom_prompt']
+        custom_prompt = content.get('custom_prompt', '')
         
         # Ensure scrapped_data is populated and has the required structure
         if not scrapped_data or 'elements_and_performance_criteria' not in scrapped_data:
@@ -49,6 +49,42 @@ def performance_criteria():
     
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+
+@app.route('/extract-topics', methods=['POST'])
+def extract_topics():
+    try:
+        content = request.get_json()
+        if not content:
+            return jsonify({"error": "no content found"}), 400
+
+        custom_prompt = content.get('custom_prompt', '')
+        knowledge_evidence = scrapped_data['knowledge_evidence']
+        topics = updater.extract_topics_from_evidences(knowledge_evidence,custom_prompt)
+
+        return jsonify({"topics": topics})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+@app.route('/generate-description', methods=['POST'])
+def generate_description():
+    try:
+        content = request.get_json()
+        if not content or 'topic_name' not in content:
+            return jsonify({"error": "JSON payload with 'topic_name' key is required"}), 400
+
+        topic_name = content['topic_name']
+        custom_prompt = content.get('custom_prompt','')
+        description = updater.generate_topic_description(topic_name,custom_prompt)
+
+        if not description:
+            return jsonify({"error": "Failed to generate description for the topic"}), 500
+
+        return jsonify({"topic_name": topic_name, "description": description})
+    
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)
