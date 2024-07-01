@@ -1,0 +1,544 @@
+{
+    "competency_id": "UEECD0007",
+    "title": "UEECD0007 - Apply work health and safety regulations, codes and practices in the workplace(Release 1)",
+    "releases": [
+        {
+            "version": "11(this release)",
+            "release_date": "05/Oct/2020",
+            "link": null
+        }
+    ],
+    "elements_and_performance_criteria": [
+        {
+            "element": {
+                "number": "1",
+                "title": "Prepare to enter an electrotechnology workplace"
+            },
+            "criteria": [
+                {
+                    "number": "1.1",
+                    "description": "Work area access permits are obtained from appropriate person/s in accordance with workplace procedures"
+                },
+                {
+                    "number": "1.2",
+                    "description": "Relevant workplace WHS/OHS safety regulations and codes of practices are identified and followed when entering the electrotechnology work area"
+                },
+                {
+                    "number": "1.3",
+                    "description": "Safe work methods for controlling risks are obtained, read and applied prior to undertaking work activity in accordance with WHS/OHS workplace procedures"
+                },
+                {
+                    "number": "1.4",
+                    "description": "Preparation for electrical and non-electrical isolation is carried out to prevent creation of hazards from loss of machine/system/process control in accordance with WHS/OHS workplace procedures"
+                },
+                {
+                    "number": "1.5",
+                    "description": "Tools, equipment and chemicals required for the electrotechnology work are checked for safety and correct functionality in accordance with workplace procedures and regulatory requirements"
+                },
+                {
+                    "number": "1.6",
+                    "description": "Personal protective equipment (PPE) is worn appropriate to the electrotechnology work area and in accordance with workplace procedures"
+                }
+            ]
+        },
+        {
+            "element": {
+                "number": "2",
+                "title": "Apply safe electrotechnology working practices"
+            },
+            "criteria": [
+                {
+                    "number": "2.1",
+                    "description": "Risk control work measures are implemented in accordance with WHS/OHS workplace procedures"
+                },
+                {
+                    "number": "2.2",
+                    "description": "Procedures for dealing with accidents, fires and emergencies are followed in accordance with workplace procedures, scope of responsibility and capabilities"
+                },
+                {
+                    "number": "2.3",
+                    "description": "Safe work methods are applied when working at heights including safe and effective use of safety equipment"
+                },
+                {
+                    "number": "2.4",
+                    "description": "Safe work methods are used when undertaking lifting, lowering, pushing, pulling, carrying or otherwise moving, holding or restraining workplace tasks in accordance with relevant code of practice"
+                },
+                {
+                    "number": "2.5",
+                    "description": "Safe work methods for removing an electric shock victim from a live electrical situation are demonstrated in accordance with workplace emergency management procedures"
+                },
+                {
+                    "number": "2.6",
+                    "description": "Working area is kept clean, neat and tidy in accordance with workplace housekeeping procedures"
+                }
+            ]
+        },
+        {
+            "element": {
+                "number": "3",
+                "title": "Follow electrotechnology workplace procedures for hazard identification and risk control"
+            },
+            "criteria": [
+                {
+                    "number": "3.1",
+                    "description": "Hazards are identified, control measures implemented and reviewed through regular active participation in the consultation process with employer and other employees"
+                },
+                {
+                    "number": "3.2",
+                    "description": "Hazards in the work area are identified and reported to relevant person/s in accordance with workplace procedures"
+                },
+                {
+                    "number": "3.3",
+                    "description": "WHS/OHS documentation and incident records are completed in accordance with regulatory requirements and workplace procedures"
+                },
+                {
+                    "number": "3.4",
+                    "description": "Workplace instructions are followed in accordance with regulatory requirements and workplace procedures"
+                }
+            ]
+        }
+    ],
+    "performance_evidence": [
+        {
+            "evidence": "applying relevant work health and safety (WHS)/occupational health and safety (OHS) regulations, legislation, codes of practices and procedures in the workplace, including:",
+            "sublist": [
+                {
+                    "evidence": "identifying typical hazards associated with work environments and assessing risk/s in an electrotechnology workplace",
+                    "sublist": [],
+                    "number": "1.1"
+                },
+                {
+                    "evidence": "applying and reviewing risk control measures to minimise, control or eliminate identified hazards",
+                    "sublist": [],
+                    "number": "1.2"
+                },
+                {
+                    "evidence": "reporting hazards to relevant person/s",
+                    "sublist": [],
+                    "number": "1.3"
+                },
+                {
+                    "evidence": "applying safe working practices/methods",
+                    "sublist": [],
+                    "number": "1.4"
+                },
+                {
+                    "evidence": "contributing to WHS/OHS consultative processes",
+                    "sublist": [],
+                    "number": "1.5"
+                }
+            ],
+            "number": "1"
+        },
+        {
+            "evidence": "following relevant workplace emergency management procedures and instructions relating to WHS/OHS and emergency incidents",
+            "sublist": [],
+            "number": "2"
+        },
+        {
+            "evidence": "selecting and using appropriate personal protective equipment (PPE)",
+            "sublist": [],
+            "number": "3"
+        },
+        {
+            "evidence": "applying correct manual handling techniques",
+            "sublist": [],
+            "number": "4"
+        },
+        {
+            "evidence": "confirming (safe) isolation of an electrical supply and isolation of potential electrical and non-electrical hazards has been completed by an authorised person",
+            "sublist": [],
+            "number": "5"
+        },
+        {
+            "evidence": "demonstrating safe methods of removing an electric shock victim from a live electrical situation",
+            "sublist": [],
+            "number": "6"
+        },
+        {
+            "evidence": "selecting an appropriate ladder for a given situation and performing a safety check before use",
+            "sublist": [],
+            "number": "7"
+        },
+        {
+            "evidence": "completing relevant WHS/OHS documentation.",
+            "sublist": [],
+            "number": "8"
+        }
+    ],
+    "knowledge_evidence": [
+        {
+            "evidence": "effective verbal and written communication techniques",
+            "sublist": [],
+            "number": "1"
+        },
+        {
+            "evidence": "electrotechnology work environment, including:",
+            "sublist": [
+                {
+                    "evidence": "appropriate fire extinguisher for a given type of fire",
+                    "sublist": [],
+                    "number": "2.1"
+                },
+                {
+                    "evidence": "commonly used workplace safety signs",
+                    "sublist": [],
+                    "number": "2.2"
+                },
+                {
+                    "evidence": "relevant industry standard for safe workplace procedures",
+                    "sublist": [],
+                    "number": "2.3"
+                },
+                {
+                    "evidence": "risk assessment documentation",
+                    "sublist": [],
+                    "number": "2.4"
+                },
+                {
+                    "evidence": "typical hazards associated with a range of work environments",
+                    "sublist": [],
+                    "number": "2.5"
+                },
+                {
+                    "evidence": "use of fire extinguishers",
+                    "sublist": [],
+                    "number": "2.6"
+                },
+                {
+                    "evidence": "housekeeping and potential hazards in relation to improper housekeeping",
+                    "sublist": [],
+                    "number": "2.7"
+                },
+                {
+                    "evidence": "workplace procedures used to control the risks associated with workplace hazards",
+                    "sublist": [],
+                    "number": "2.8"
+                }
+            ],
+            "number": "2"
+        },
+        {
+            "evidence": "legal requirements relevant to WHS/OHS in the workplace, including:",
+            "sublist": [
+                {
+                    "evidence": "appropriate personal protective equipment (PPE)",
+                    "sublist": [],
+                    "number": "3.1"
+                },
+                {
+                    "evidence": "asbestos awareness and reporting hazardous gases, including supervisory requirements and duty of care",
+                    "sublist": [],
+                    "number": "3.2"
+                },
+                {
+                    "evidence": "difference between hazards and risks",
+                    "sublist": [],
+                    "number": "3.3"
+                },
+                {
+                    "evidence": "duty holder responsibilities, as specified in WHS/OHS Acts, regulations and codes of practice",
+                    "sublist": [],
+                    "number": "3.4"
+                },
+                {
+                    "evidence": "employer and employee responsibilities, rights and obligations",
+                    "sublist": [],
+                    "number": "3.5"
+                },
+                {
+                    "evidence": "general aims and objectives of the relevant state or territory legislation relating to WHS/OHS",
+                    "sublist": [],
+                    "number": "3.6"
+                },
+                {
+                    "evidence": "hazards that may be present in the electrotechnology workplace, the harm they can cause and how this harm occurs",
+                    "sublist": [],
+                    "number": "3.7"
+                },
+                {
+                    "evidence": "housekeeping and potential hazards in relation to improper housekeeping",
+                    "sublist": [],
+                    "number": "3.8"
+                },
+                {
+                    "evidence": "major functions of safety committees and representatives",
+                    "sublist": [],
+                    "number": "3.9"
+                },
+                {
+                    "evidence": "powers of health and safety inspectors",
+                    "sublist": [],
+                    "number": "3.10"
+                },
+                {
+                    "evidence": "relevant WHS/OHS regulations, codes and practices",
+                    "sublist": [],
+                    "number": "3.11"
+                },
+                {
+                    "evidence": "underlying principles of WHS",
+                    "sublist": [],
+                    "number": "3.12"
+                }
+            ],
+            "number": "3"
+        },
+        {
+            "evidence": "life support - cardiopulmonary resuscitation (CPR) in the workplace, including:",
+            "sublist": [
+                {
+                    "evidence": "first aid",
+                    "sublist": [],
+                    "number": "4.1"
+                },
+                {
+                    "evidence": "responsibilities of the first aider",
+                    "sublist": [],
+                    "number": "4.2"
+                },
+                {
+                    "evidence": "priorities of first aid management for any accident or injury",
+                    "sublist": [],
+                    "number": "4.3"
+                },
+                {
+                    "evidence": "procedures required at an accident scene",
+                    "sublist": [],
+                    "number": "4.4"
+                },
+                {
+                    "evidence": "legal and ethical issues, which may impact on the management of care",
+                    "sublist": [],
+                    "number": "4.5"
+                },
+                {
+                    "evidence": "'duty of care'",
+                    "sublist": [],
+                    "number": "4.6"
+                },
+                {
+                    "evidence": "examination of a casualty for injuries",
+                    "sublist": [],
+                    "number": "4.7"
+                },
+                {
+                    "evidence": "effect of cardiopulmonary arrest on the body",
+                    "sublist": [],
+                    "number": "4.8"
+                },
+                {
+                    "evidence": "managing simulated conditions of airway obstruction, respiratory arrest and cardiopulmonary arrest",
+                    "sublist": [],
+                    "number": "4.9"
+                },
+                {
+                    "evidence": "single and two-person CPR",
+                    "sublist": [],
+                    "number": "4.10"
+                },
+                {
+                    "evidence": "signs and symptoms of an altered level of consciousness",
+                    "sublist": [],
+                    "number": "4.11"
+                },
+                {
+                    "evidence": "management of simulation of a casualty with an altered level of consciousness",
+                    "sublist": [],
+                    "number": "4.12"
+                },
+                {
+                    "evidence": "signs and symptoms of shock",
+                    "sublist": [],
+                    "number": "4.13"
+                },
+                {
+                    "evidence": "management of simulation of a casualty in shock",
+                    "sublist": [],
+                    "number": "4.14"
+                }
+            ],
+            "number": "4"
+        },
+        {
+            "evidence": "relevant safe work method statements (SWMS)/job safety analysis (JSA) or risk mitigation processes, including:",
+            "sublist": [
+                {
+                    "evidence": "emergency management plan",
+                    "sublist": [],
+                    "number": "5.1"
+                },
+                {
+                    "evidence": "hierarchy of WHS/OHS hazard risk control measures",
+                    "sublist": [],
+                    "number": "5.2"
+                },
+                {
+                    "evidence": "principles of risk assessment/management and required documentation",
+                    "sublist": [],
+                    "number": "5.3"
+                }
+            ],
+            "number": "5"
+        },
+        {
+            "evidence": "typical hazards associated with electrotechnology work environments and their control, including:",
+            "sublist": [
+                {
+                    "evidence": "asbestos, including:",
+                    "sublist": [
+                        {
+                            "evidence": "common types of asbestos containing building materials",
+                            "number": "6.1.1"
+                        },
+                        {
+                            "evidence": "warning signs used to identify the presence of asbestos",
+                            "number": "6.1.2"
+                        },
+                        {
+                            "evidence": "effects of asbestos on the human body",
+                            "number": "6.1.3"
+                        },
+                        {
+                            "evidence": "requirements for reporting the presence of asbestos",
+                            "number": "6.1.4"
+                        }
+                    ],
+                    "number": "6.1"
+                },
+                {
+                    "evidence": "silica, including:",
+                    "sublist": [
+                        {
+                            "evidence": "types of materials that contain crystalline silica (silica dust)",
+                            "number": "6.2.1"
+                        },
+                        {
+                            "evidence": "methods of releasing silica dust",
+                            "number": "6.2.2"
+                        },
+                        {
+                            "evidence": "recommended levels of exposure to crystalline silica",
+                            "number": "6.2.3"
+                        },
+                        {
+                            "evidence": "effects of crystalline silica on the human body",
+                            "number": "6.2.4"
+                        }
+                    ],
+                    "number": "6.2"
+                },
+                {
+                    "evidence": "hazardous gases",
+                    "sublist": [],
+                    "number": "6.3"
+                },
+                {
+                    "evidence": "chemicals in the workplace, including:",
+                    "sublist": [
+                        {
+                            "evidence": "hazardous substances and dangerous goods and their classifications",
+                            "number": "6.4.1"
+                        },
+                        {
+                            "evidence": "labelling and storage requirements for chemicals",
+                            "number": "6.4.2"
+                        },
+                        {
+                            "evidence": "purpose and interpretation of safety data sheets (SDS)/material safety data sheets (MSDS)",
+                            "number": "6.4.3"
+                        }
+                    ],
+                    "number": "6.4"
+                },
+                {
+                    "evidence": "confined spaces, including:",
+                    "sublist": [
+                        {
+                            "evidence": "control measures for working in a designated confined space",
+                            "number": "6.5.1"
+                        },
+                        {
+                            "evidence": "hazards associated with working in a confined space",
+                            "number": "6.5.2"
+                        },
+                        {
+                            "evidence": "workplace situations that could be classified as a confined space",
+                            "number": "6.5.3"
+                        }
+                    ],
+                    "number": "6.5"
+                },
+                {
+                    "evidence": "physical and psychological hazards, including excessive noise, vibration, thermal stress, radiation, lasers, occupational overuse syndrome, stress, drugs and alcohol",
+                    "sublist": [],
+                    "number": "6.6"
+                },
+                {
+                    "evidence": "safe manual handling principles, including:",
+                    "sublist": [
+                        {
+                            "evidence": "procedures and methods for manual handling",
+                            "number": "6.7.1"
+                        },
+                        {
+                            "evidence": "situations that may cause manual handling injuries",
+                            "number": "6.7.2"
+                        },
+                        {
+                            "evidence": "types of manual handling injuries and their effect",
+                            "number": "6.7.3"
+                        }
+                    ],
+                    "number": "6.7"
+                },
+                {
+                    "evidence": "working at heights, including:",
+                    "sublist": [
+                        {
+                            "evidence": "hazards and precautions associated with working on ladders, elevated work platforms (EWP) and scaffolds",
+                            "number": "6.8.1"
+                        },
+                        {
+                            "evidence": "identification of work area as a height risk and use appropriate safety equipment to prevent a fall",
+                            "number": "6.8.2"
+                        }
+                    ],
+                    "number": "6.8"
+                },
+                {
+                    "evidence": "working safely with electricity, including:",
+                    "sublist": [
+                        {
+                            "evidence": "effects of electric shock on the human body",
+                            "number": "6.9.1"
+                        },
+                        {
+                            "evidence": "protection offered by a residual current device (RCD)",
+                            "number": "6.9.2"
+                        },
+                        {
+                            "evidence": "need for ensuring the (safe) isolation of an electrical supply",
+                            "number": "6.9.3"
+                        },
+                        {
+                            "evidence": "appropriate method of removing an electric shock victim from a live electrical situation",
+                            "number": "6.9.4"
+                        },
+                        {
+                            "evidence": "precautions that can minimise the chance of electric shock (earthing, extra-low voltage (ELV), fuses, circuit breakers and RCDs)",
+                            "number": "6.9.5"
+                        },
+                        {
+                            "evidence": "common causes of electrical accidents.",
+                            "number": "6.9.6"
+                        }
+                    ],
+                    "number": "6.9"
+                }
+            ],
+            "number": "6"
+        }
+    ],
+    "application": "This unit involves the skills and knowledge required to apply work health and safety (WHS)/occupational health and safety (OHS) regulations and codes of practices in the electrotechnology workplace.\nIt includes applying safe working practices, following workplace procedures for hazard identification and risk control. It also includes electrotechnology worker responsibilities and application for health and safety, risk management and adherence to safety practices as part of electrotechnology work functions when preparing to enter a work area.\nNo licensing, legislative or certification requirements apply to this unit at the time of publication."
+}
