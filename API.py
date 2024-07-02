@@ -4,7 +4,12 @@ import scrapper
 import updater
 
 app = Flask(__name__)
-CORS(app, resources={r"/training-data": {"origins": "http://localhost:5173"}})
+CORS(app, resources={
+    "/training-data": {"origins": "http://localhost:5173"},
+    "/performance_criteria": {"origins": "http://localhost:5173"},
+    "/extract-topics": {"origins": "http://localhost:5173"},
+    "/generate-description": {"origins": "http://localhost:5173"},
+})
 scrapped_data = None  # Initialize as None initially
 
 @app.route('/training-data', methods=['GET'])
