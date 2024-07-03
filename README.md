@@ -93,15 +93,16 @@ Error (500): Returns an error message if there is an issue with extracting the t
 
 ```json
 {
-    "topic_name": "Your topic name here",
-    "custom_prompt": "Your custom prompt here"
+    "topic_name": "WHS/OHS Risk Control Measures",
+    "subtopic_name": "Importance of Following Workplace Procedures",
+    "custom_prompt": "Ensure to emphasize real-world applications."
 }
 ```
 
 ##### Request Example:
 
 ```bash
-curl -X POST "http://localhost:5000/generate-description" -H "Content-Type: application/json" -d "{\"topic_name\": \"Transformer Operation\", \"custom_prompt\": \"\"}"
+curl -X POST "http://127.0.0.1:5000/generate-description" -H "Content-Type: application/json" -d "{\"topic_name\": \"WHS/OHS Risk Control Measures\", \"subtopic_name\": \"Importance of Following Workplace Procedures\", \"custom_prompt\": \"Ensure to emphasize real-world applications.\"}"
 ```
 ##### Response:
 
