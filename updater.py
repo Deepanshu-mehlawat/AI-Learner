@@ -2,6 +2,7 @@ import json
 from openai import OpenAI
 from dotenv import load_dotenv
 import os
+import prompts
 
 # Load environment variables from .env file
 load_dotenv()
@@ -12,7 +13,7 @@ client = OpenAI(api_key=os.getenv("API_KEY"))
 # Define the base system message
 base_system_message = '''I am making an AI learner system, I get course details including performance criteria required for a student to qualify,
 knowledge evidences that contain the topics one needs to learn to clear the performance criteria.
-You have to add related knowledge evidences to the performance criteria I provide in JSON format. Add a key named topics and add the related knowledge evidences to each criterion.'''
+You have to add related knowledge evidences to the performance criteria I provide in JSON format. Add a key named topics and add the related knowledge evidences to each criterion in form of a list....add just the topic name.'''
 
 messages=[]
 
@@ -24,29 +25,44 @@ def get_user_prompt(data, custom_prompt=None):
 
 def update_training_data(data, custom_prompt=None):
     global messages
-    messages.extend( [
-        {"role": "system", "content": base_system_message},
-        {"role": "user", "content": get_user_prompt(data, custom_prompt)}
-    ])
+    messages = [
+        {"role": "system", "content": prompts.prompt1},
+        {"role": "system", "content": prompts.prompt2},
+        {"role": "system", "content": prompts.prompt3},
+        {"role": "system", "content": f'i am providing you with the performance criteria in json format:\n{data["elements_and_performance_criteria"]}\njust remember it for now, i will provide you with knowledge evidences next'},
+        {"role": "system", "content": f'here is the knowledge evidence,\n {data["knowledge_evidence"]}\n remember them and wait for my command to generate mapping'},
+        {"role": "system", "content": 'Knowledge evidences are topics one need to learn the performance criterias, we need to map the KEs to PC.'},
+    ]
 
-    completion = client.chat.completions.create(
-    model="gpt-3.5-turbo",
-    messages=messages
-    )
+    combined_mappings = []
 
-    try:
-        updated_performance_criteria = json.loads(completion.choices[0].message.content)
-    except json.JSONDecodeError as e:
-        return {"error": "Failed to parse response from OpenAI"}
+    # Iterate over each performance criterion and create a completion
+    for i in data["elements_and_performance_criteria"]:
+        user_message = {"role": "user", "content": f"Now generate the mapping for the given PC and return it in json format not in a code block:{i}"}
+        current_messages = messages + [user_message]
 
-    # Update the original data
-    data['elements_and_performance_criteria'] = updated_performance_criteria
+        completion = client.chat.completions.create(
+            model="gpt-3.5-turbo",
+            messages=current_messages
+        )
 
-    # Save the updated data back to the JSON file
-    with open('updated_training_data.json', 'w') as f:
-        json.dump(data, f, indent=4)
+        response_content = completion.choices[0].message.content
+        try:
+            mapping_result = json.loads(response_content)
+            combined_mappings.extend(mapping_result['Mappings'])
+        except json.JSONDecodeError:
+            print("Failed to decode JSON from the response:")
+            print(response_content)
 
-    return data
+    # Create a single dictionary with combined mappings
+    final_mappings = {"Mappings": combined_mappings}
+    
+    #with open('combined_mappings.json', 'w') as outfile:
+     #   json.dump(final_mappings, outfile, indent=4)
+    
+    #print("Combined mappings saved to combined_mappings.json")
+    
+    return final_mappings
 
 def extract_topics_from_evidences(knowledge_evidence,custom_prompt = ""):
     topics = []
