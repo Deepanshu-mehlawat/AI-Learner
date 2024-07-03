@@ -103,15 +103,26 @@ Use this just as an example.
     except Exception as e:
         print(f"Error extracting topics: {str(e)}")
 
-def generate_topic_description(topic_name,custom_prompt):
+def generate_topic_description(data,topic_name,subtopic_name,custom_prompt=None):
     try:
-        global messages
-        # Construct a prompt for GPT-3.5 to generate a description of the topic
-        prompt = f"Generate a 500-word description of '{topic_name}'. Include details, examples, and relevant information. also, generate it in the context of the knowledge evidence okay. return only the text info, no need to give bullets and bold subheadings"+custom_prompt
+        messages= [
+        {"role": "system", "content": prompts.prompt5},
+        {"role": "system", "content": prompts.prompt6},
+        {"role": "system", "content": f'''since we need to generate data according to aqf levels, here is a description of all the AQF level:
+{prompts.prompt7}
+Please remember them'''},
+        {"role": "system", "content": f'''{prompts.prompt8}
+unit code:{data["competency_id"]}
+name : {data["title"]}
+application: {data["application"]}
 
-        messages.extend( [
-        {"role": "user", "content": prompt}
-        ])
+'''},
+        {"role": "user", "content": f'''this is the heading for the topic: {topic_name}
+you need to describe this subheading while keeping the heading in mind and according to the AQF level i described before
+generate just the description for this subheading as text, no need for formatting or anything : {subtopic_name}
+{custom_prompt}
+'''}
+        ]
 
         completion = client.chat.completions.create(
         model="gpt-3.5-turbo",
@@ -125,3 +136,12 @@ def generate_topic_description(topic_name,custom_prompt):
         return None
     
     return topics
+
+if (__name__)=="__main__":
+    data = []
+    with open("UEECD0007_training_data.json","r") as f:
+        data = json.load(f)
+    heading="(PC 1.1) Work health and safety (WHS)/occupational health and safety (OHS) requirements and workplace procedures for a given work area are obtained and applied"
+    sub="Importance of Workplace Procedures"
+    print(generate_topic_description(data,heading,sub," "))
+    
