@@ -337,3 +337,83 @@ this here is just a small sample output i want, dont generate anything just yet,
 #'''},
 #    {"role": "user", "content": f"i am giving you the performance criterias, return me formatted json data after adding the topics for each criteria,{data['elements_and_performance_criteria']}, here are the knowledge evidences: {data['knowledge_evidence']}.........also, some evidences have the word 'including' in them....  remove the word 'including' from them.......also return the data not in a code block...i am using API and i want to use the data you sent me directly."}
 #  ]
+
+
+prompt4='''Great now divide the PC as per the example provided: 
+1.1 Identify and assess organisational compliance against environmental legislation, regulations and standards
+First what we do is identify the main keywords which are in this PC as listed
+Organisational compliance
+Environmental legislation
+Regulations
+Standards
+Identification of organisational compliance 
+Assessing organisational compliance 
+Once the keywords are listed then we make the content heading that we want students to learn which in this case is as provided
+Organisational compliance 
+Importance/Role of organisational compliance
+Types of organisational compliance 
+Environmental legislation 
+Importance of environmental legislation
+Examples of environmental legislation
+Regulations and standards 
+Role of legislation and standards 
+Types of legislation and standards applicable to organisation and environment 
+Organisational compliance in relation with environmental legislation, regulations and standards
+Ways to identify organisational compliance with environmental legislation
+Ways to assess organisational compliance in relation with environmental legislation, regulations and standards
+KE 1 - Compliance requirements for the work area with reference to legislation, regulations, codes of practice, and workplace procedures that relate to environmental and sustainability issues.
+Compliance requirements as per legislation, regulations, codes of practice
+Codes of practice
+Environmental and sustainability issue
+Compliance with environmental and sustainability
+Make sure that the knowledge evidence is not kept separate it must be integrated and aligned with the performance criteria heading see the example provided: 
+These are points of performance criteria: 
+Organisational compliance 
+Importance/Role of organisational compliance
+Types of organisational compliance (KE1) – reason it is talking about the compliance types and our KE is also talking about compliance requirements
+Environmental legislation (KE1) – as our knowledge evidence is also asking about environmental issues and legislation
+Importance of environmental legislation
+Examples of environmental legislation
+Regulations and standards (KE 1) – as the knowledge evidence itself is based on compliance requirements as per regulations and standards
+Role of legislation and standards 
+Types of legislation and standards applicable to organisation and environment 
+Organisational compliance in relation with environmental legislation, regulations and standards
+Ways to identify organisational compliance with environmental legislation
+Ways to assess organisational compliance in relation with environmental legislation, regulations and standards
+Another example 
+PC 1.2 Collect data on environmental efficiency in organisational systems and processes
+Main keywords
+Environmental efficiency 
+Organisational systems and processes
+Collect data 
+Main heading that will be included in the guide: 
+Environmental efficiency 
+Role/importance of environmental efficiency 
+Data collection 
+Importance of data collection 
+Data Collection Techniques and Tools
+Organisational system and processes suitable for environmental efficiency
+Types of organisational system and processes for analysing environmental efficiency
+Ways to gather data on environmental efficiency
+Analyse the data collected on environmental efficiency
+Another example: 
+1.2 Identify required information for diagnosis activity
+This is the KE mapped to this PC 
+methods to locate and interpret information required to diagnose and repair air conditioning and HVAC systems, including:
+information provided by customers and supervisors
+air conditioning and HVAC system manufacturer specifications
+Australian automotive code of practice: control of refrigerant gases during manufacture, installation, servicing or de-commissioning of motor vehicle air conditioners
+First what we do is identify the main keywords which are in this PC as listed
+Diagnosis activity
+Identify information 
+Main heading that will be included in the guide and relevant KE that will be included with heading: 
+Importance of locating information to perform diagnosis activity 
+Ways to locate and interpret information (KE1) 
+Obtain information provided by customers (KE 1.1)
+Refer to manufacturer specifications about the air conditioning and HVAC system (KE1.2)
+Refer to Australian code of conducts (KE 1.3)
+What we have done here is we mapped the KE itself in the heading of the performance criteria as KE is covering more information about the PC, 
+While mapping the KE with the PC headings, we make sure that we don’t copy exact KE in the heading, we need to rephrase it a bit. 
+We also need to make sure that we don’t change the wording of elements and PC at all.  
+Do you have any question on how to do division of the content? Please don’t generate anything yet, I will provide the PC that I want you to divide.
+'''
