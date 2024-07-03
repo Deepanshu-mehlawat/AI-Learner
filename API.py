@@ -73,23 +73,24 @@ def extract_topics():
 @app.route('/generate-description', methods=['POST'])
 def generate_description():
     try:
+        global scrapped_data
         content = request.get_json()
-        if not content or 'topic_name' not in content:
-            return jsonify({"error": "JSON payload with 'topic_name' key is required"}), 400
+        if not content or 'topic_name' not in content or 'subtopic_name' not in content:
+            return jsonify({"error": "JSON payload with 'topic_name' and 'subtopic_name' keys is required"}), 400
 
         topic_name = content['topic_name']
-        custom_prompt = content.get('custom_prompt','')
-        description = updater.generate_topic_description(topic_name,custom_prompt)
+        subtopic_name = content['subtopic_name']
+        custom_prompt = content.get('custom_prompt', '')
+
+        description = updater.generate_topic_description(scrapped_data, topic_name, subtopic_name, custom_prompt)
 
         if not description:
             return jsonify({"error": "Failed to generate description for the topic"}), 500
 
-        return jsonify({"topic_name": topic_name, "description": description})
+        return jsonify({"description": description})
     
     except Exception as e:
         return jsonify({"error": str(e)}), 500
-
-
 
 if __name__ == '__main__':
     app.run(debug=True)

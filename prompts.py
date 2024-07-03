@@ -417,3 +417,177 @@ While mapping the KE with the PC headings, we make sure that we don’t copy exa
 We also need to make sure that we don’t change the wording of elements and PC at all.  
 Do you have any question on how to do division of the content? Please don’t generate anything yet, I will provide the PC that I want you to divide.
 '''
+prompt5='''We want to write the content for the VET students in Australia by adhering by ASQA standards and the AQF level, the reason we want the AQF level to be considered while writing is that each student at each level have different understanding and if we don’t specify the level than it might be difficult for the students to understand what we are trying to say in our content. So, it is mandatory to always follow the AQF level instructions before giving the detailed content. We also need to follow ASQA guidelines as it will help us what ASQA wants from us in the content and how we make sure that we align with the rules of evidence and principles of assessment. 
+
+Here is the AQF level document for you to understand each and every level in detail demonstrating what needs to be included in content, what shouldn’t be there in the content, what needs to be avoided. 
+
+Moreover, the content that we are going to write must always be in Australian English. 
+
+Do you understand and do you have any questions? 
+'''
+prompt6='''Great, make sure that we provide the content in easy language which students can understand, and all the information is as per Australian English and the standards and legislation are Australian 
+
+The students have no knowledge about the topic so we need to develop in a way that they get the idea in detail along with the images, moreover, we will provide the teach the material to students face to face and it will be provided to them as hard copies and sometimes will be deliver online as well. 
+
+Along with this, the legislation that we need to focus should be state specific where the topic requires and have to provide general Australian standards as well
+
+do you understand the requirements, and do you have any questions?
+'''
+prompt7='''AQF Level 1 - 
+What to Include:
+Clear and Straightforward Language
+Simplicity is Key: Use simple, everyday language that avoids complexity. For example, instead of saying "administer," use "give" or "provide."
+Avoid Jargon and Technical Terms: Minimize the use of industry-specific jargon or technical terms. If you must use them, include a clear definition. For example, if using the term "budget," you might add, "A budget is a plan showing how much money you have and how you will spend it."
+Step-by-Step Information
+Sequential Instructions: Present information in a logical sequence. For example, if explaining how to send an email, break it down into steps: open email program, compose a new message, add recipient's email address, write your message, and press send.
+Visual Guides: Accompany instructions with images or diagrams that illustrate each step, making it easier for learners to follow along.
+Basic Information
+Foundational Concepts Only: Focus on the essential, foundational knowledge needed for everyday life, initial work, and preparation for further learning. For instance, introduce basic computer skills, such as turning on a computer, using a mouse, and navigating the internet.
+Practical Examples: Use examples relevant to daily life or initial work scenarios to illustrate concepts, making the learning material relatable and applicable.
+What to Avoid:
+Complex Language and Structure
+Avoid Long Sentences: Use short, concise sentences to improve readability and comprehension.
+Complex Vocabulary: Steer clear of words that are too advanced or uncommon for beginners. Choose the simplest word that conveys the idea.
+Overloading Information
+Too Much at Once: Don’t overwhelm learners with too much information at once. Break content into small, manageable chunks.
+Assuming Prior Knowledge: Don’t assume learners have prior knowledge of a topic. Start with the basics and build from there.
+Abstract Concepts Without Application
+Unrelated Examples: Avoid using examples or analogies that are not directly related to the learners' experiences or goals.
+Theoretical Without Practical: While some theoretical knowledge is necessary, always tie it back to practical application that learners can relate to.
+Example for Writing Content:
+Topic: Using a Computer Mouse
+Content: "To use a computer mouse, follow these steps:
+Hold the Mouse: Place your hand on the mouse, resting your palm lightly on top.
+Move the Mouse: Slide the mouse on the desk or mouse pad to move the cursor on the screen.
+Click: Gently press and release the left button to click on something.
+Right-Click: Press and release the right button for more options.
+Scroll: Roll the middle wheel up or down to move the page up or down.
+Remember:
+The mouse should move smoothly. If it’s hard to move, check if something is blocking it.
+If the cursor moves too fast or too slow, ask for help to adjust the mouse speed."
+
+
+QF Level 2
+What to Include:
+Language Use: Employ basic factual, technical language appropriate for beginners, with clear definitions for any technical terms.
+Step-by-Step Information: Offer detailed, sequential instructions for undertaking defined activities and solving predictable problems.
+Basic Information: Emphasize practical knowledge applicable to a defined area of work and learning.
+Practical Examples: Relate learning to real-life scenarios relevant to the work context.
+What to Avoid:
+Complex Language: Avoid overly technical terms without providing explanations.
+Assuming Knowledge: Do not assume learners have background knowledge of the topics.
+Example for Writing Content:
+Topic: Preparing a Simple Budget
+Content: "To prepare a simple budget, you need to:
+List Income: Write down how much money you receive.
+List Expenses: Note down what you spend money on.
+Subtract Expenses from Income: This shows if you have enough money for your needs.
+Adjust as Needed: Find ways to reduce expenses if spending more than income."
+AQF Level 3
+What to Include:
+Language Use: Balance factual, technical, and introductory theoretical knowledge with simple explanations.
+Step-by-Step Information: Break down more complex tasks into detailed steps, enhancing cognitive and technical skills.
+Basic Information: Combine practical skills with theoretical insights relevant to specific areas of work.
+Practical Examples: Use workplace scenarios to illustrate the application of skills.
+What to Avoid:
+Over-Complication: Keep explanations direct, avoiding unnecessary complexity.
+Irrelevant Examples: Ensure all examples and scenarios closely relate to the occupational skills being taught.
+Example for Writing Content:
+Topic: Basic Customer Service Communication
+Content: "Effective customer service involves:
+Listening Carefully: Pay attention to the customer's needs.
+Responding Politely: Use polite language and a friendly tone.
+Offering Solutions: Suggest ways to solve the customer's problem.
+Following Up: Check if the customer is satisfied with the solution."
+
+AQF Level 4
+What to Include:
+Broadened Language Use: Introduce broader factual, technical, and some theoretical knowledge with clear explanations.
+Step-by-Step Information: Guide learners through more complex tasks that require a variety of methods and tools.
+Basic to Intermediate Information: Expand on foundational knowledge with more detailed concepts relevant to specialized work.
+Practical Examples: Incorporate case studies and practical exercises that reflect routine and non-routine activities.
+What to Avoid:
+Excessive Jargon: Use technical terms judiciously, ensuring they are well-explained.
+Abstract Concepts Without Context: Provide practical applications for all theoretical concepts introduced.
+Example for Writing Content:
+Topic: Basic Project Management
+Content: "Effective project management involves:
+Planning: Define the project scope and objectives.
+Scheduling: Develop a timeline for project tasks.
+Executing: Carry out the plan while managing resources.
+Monitoring: Track progress and make adjustments as needed.
+Closing: Complete and review the project to ensure all objectives are met."
+
+AQF Level 5
+What to Include:
+Specialized Technical and Theoretical Language: Use industry-specific terminology, explaining all terms clearly.
+Analytical and Problem-Solving Tasks: Present challenges that require analysis and offer solutions to complex problems.
+Advanced Information: Dive deeper into the specialized knowledge and skills needed for skilled/paraprofessional work.
+Interactive and Scenario-Based Examples: Utilize simulations and real-life scenarios to demonstrate the application of skills.
+What to Avoid:
+Oversimplification: Ensure content complexity matches the advanced level of understanding expected at this level.
+Lack of Practical Application: All theoretical knowledge should be linked to its real-world application.
+Example for Writing Content:
+Topic: Advanced Customer Relationship Management (CRM)
+Content: "To enhance CRM, consider:
+Data Analysis: Use customer data to understand preferences and behaviors.
+Personalized Communication: Tailor interactions based on customer information.
+Feedback Loop: Implement mechanisms for customer feedback and incorporate it into service improvements.
+Technology Utilization: Leverage CRM software for efficient customer management."
+
+AQF Level 6
+What to Include:
+Broad Theoretical Knowledge: Integrate a wide range of theoretical concepts with practical application.
+Cognitive and Technical Skills Development: Encourage critical thinking and the use of advanced tools and technologies.
+Interpretation and Transmission: Teach learners to interpret complex information and transmit knowledge and solutions.
+Case Studies and Research Projects: Use detailed case studies and encourage independent research projects.
+What to Avoid:
+Generic Content: Tailor learning materials to the specific field of study, focusing on unpredictability and complexity.
+Insufficient Challenge: Provide tasks and problems that challenge learners and stimulate intellectual growth.
+Example for Writing Content:
+Topic: Market Analysis Techniques
+Content: "Effective market analysis involves:
+Segmentation: Identify distinct groups within the market.
+Trend Analysis: Analyze market trends over time.
+Competitor Analysis: Assess the strengths and weaknesses of competitors.
+Customer Feedback: Incorporate customer feedback into market understanding."
+
+AQF Level 7
+What to Include:
+Depth in Disciplines: Focus on in-depth theoretical and technical knowledge within specific disciplines.
+Well-developed Skills: Highlight well-developed cognitive, technical, and communication skills.
+Autonomy and Judgement: Encourage autonomy in learning and judgement in applying knowledge.
+Specialist Advice and Functions: Prepare learners to provide specialist advice and perform specific functions.
+What to Avoid:
+Broad Overviews Without Depth: Ensure that content provides depth in areas of specialization.
+Lack of Engagement: Use interactive elements and real-world applications to maintain learner engagement.
+Example for Writing Content:
+Topic: Strategic Management Principles
+Content: "Strategic management involves:
+Vision and Mission Setting: Define the organization's vision and mission.
+Strategic Planning: Develop long-term strategies to achieve objectives.
+Implementation: Execute strategies through effective resource allocation.
+Evaluation: Continuously assess and adjust strategies based on performance."
+
+AQF Level 8
+What to Include:
+Advanced Knowledge and Skills: Present advanced theoretical and technical knowledge in one or more disciplines.
+Critical Analysis: Foster critical analysis, evaluation, and transformation of information.
+Innovative Solutions: Challenge learners to develop innovative solutions to complex problems.
+Research and Communication: Emphasize the importance of research and the effective communication of ideas.
+What to Avoid:
+Simplification of Complex Ideas: Maintain the intellectual rigor expected at this level.
+Isolation from Current Practices: Connect theoretical knowledge with current practices and innovations in the field.
+Example for Writing Content:
+Topic: Contemporary Challenges in Environmental Science
+Content: "Addressing contemporary challenges involves:
+Research: Conduct research to understand environmental issues deeply.
+Innovation: Develop innovative solutions to environmental problems.
+Policy Analysis: Evaluate the effectiveness of existing environmental policies.
+Community Engagement: Engage with communities to implement sustainable practices."
+'''
+
+prompt8='''great, here is unit application information for you to understand and analyse so that we generate the content as per the requirements. 
+Please note that this unit is for AQF level 3 so please try to provide information as per that only:
+'''
+
