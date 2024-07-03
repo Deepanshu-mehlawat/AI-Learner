@@ -74,7 +74,7 @@ Error (500): Returns an error message if no training data is available or if the
 ##### Request Example:
 
 ```bash
-curl -X POST "http://localhost:5000/extract-topics" -H "Content-Type: application/json" -d "{\"custom_prompt\": \"Your custom prompt here\"}"
+curl -X POST "http://127.0.0.1:5000/extract-topics" -H "Content-Type: application/json" -d "{ \"custom_prompt\": \" \"}"
 ```
 
 ##### Response:
